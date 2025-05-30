@@ -1,6 +1,7 @@
 import '../globals.css'
 import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
+import Image from 'next/image'
 import { TooltipProvider } from '@/components/ui/tooltip'
 import { getTranslations, type Locale } from '@/lib/i18n'
 import { LanguageSwitcher } from '@/components/LanguageSwitcher'
@@ -90,7 +91,10 @@ export async function generateMetadata({
     },
     description: t.site.description,
     keywords: keywords[locale] || keywords.en,
-    authors: [{ name: 'Madamari Team' }],
+     authors: [
+      { name: 'Jan-Philipp Kiel' },
+      { name: 'Iyada Chatasu' }
+    ],
     creator: 'Madamari',
     publisher: 'Madamari',
     formatDetection: {
@@ -142,8 +146,11 @@ export async function generateMetadata({
       },
     },
     icons: {
-      icon: "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💕</text></svg>",
-      apple: "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💕</text></svg>",
+      icon: [
+        { url: '/madamari/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
+        { url: '/madamari/logo.svg', type: 'image/svg+xml' },
+      ],
+      apple: '/madamari/apple-touch-icon.png',
     },
     manifest: '/madamari/manifest.json',
     other: {
@@ -186,8 +193,16 @@ export default async function LocaleLayout({
                 <div className="container mx-auto px-4 py-4">
                   <div className="flex justify-between items-center">
                     <div>
-                      <h1 className="text-xl md:text-2xl font-bold text-primary">
-                        💕 {t.site.title}
+                      <h1 className="text-xl md:text-2xl font-bold text-primary flex items-center gap-2">
+                        <Image
+                          src="/madamari/logo.svg" 
+                          alt="Madamari Logo" 
+                          width={32}
+                          height={32}
+                          className="w-6 h-6 md:w-8 md:h-8"
+                          priority
+                        />
+                        {t.site.title}
                       </h1>
                       <p className="text-sm text-muted-foreground mt-1">
                         {t.site.description}
