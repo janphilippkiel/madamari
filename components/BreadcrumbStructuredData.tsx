@@ -6,7 +6,7 @@ interface BreadcrumbProps {
 }
 
 export function BreadcrumbStructuredData({ locale, title }: BreadcrumbProps) {
-  const siteUrl = 'https://janphilippkiel.com/madamari'
+  const siteUrl = 'https://madamari.com'
   
   const breadcrumbData = {
     "@context": "https://schema.org",

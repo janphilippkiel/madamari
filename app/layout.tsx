@@ -18,7 +18,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: 'Madamari – Thai-German Marriage Guide',
   description: 'Bringing Thai and German hearts together, one document at a time.',
-  metadataBase: new URL('https://janphilippkiel.com/madamari'),
+  metadataBase: new URL('https://madamari.com'),
   alternates: {
     canonical: '/',
     languages: {
@@ -26,13 +26,12 @@ export const metadata: Metadata = {
       'en': '/en', 
       'th': '/th',
       'x-default': '/de',
-    },
-  },  icons: {
+    },  },  icons: {
     icon: [
-      { url: '/madamari/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
-      { url: '/madamari/logo.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
+      { url: '/logo.svg', type: 'image/svg+xml' },
     ],
-    apple: '/madamari/apple-touch-icon.png',
+    apple: '/apple-touch-icon.png',
   },
 }
 

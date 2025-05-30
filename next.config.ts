@@ -5,9 +5,7 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  // For subdirectory deployment - uncomment these lines:
-  basePath: '/madamari',
-  assetPrefix: '/madamari',
+  // Root domain deployment - no basePath or assetPrefix needed
 }
 
 module.exports = nextConfig

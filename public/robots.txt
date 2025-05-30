@@ -6,7 +6,7 @@ Disallow: /_next/
 Disallow: /api/
 
 # Sitemap location
-Sitemap: https://janphilippkiel.com/madamari/sitemap.xml
+Sitemap: https://madamari.com/sitemap.xml
 
 # Allow common crawlers
 User-agent: Googlebot

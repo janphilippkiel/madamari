@@ -43,7 +43,7 @@ export async function generateMetadata({
   const { locale } = await params
   const t = getTranslations(locale)
   
-  const siteUrl = 'https://janphilippkiel.com/madamari'
+  const siteUrl = 'https://madamari.com'
   const currentUrl = `${siteUrl}/${locale}`
   
   // SEO-optimized keywords based on locale
@@ -121,7 +121,7 @@ export async function generateMetadata({
       type: 'website',
       images: [
         {
-          url: '/madamari/og-image.jpg',
+          url: '/og-image.jpg',
           width: 1200,
           height: 630,
           alt: t.site.title,
@@ -132,7 +132,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: t.site.title,
       description: t.site.description,
-      images: ['/madamari/og-image.jpg'],
+      images: ['/og-image.jpg'],
     },
     robots: {
       index: true,
@@ -147,12 +147,12 @@ export async function generateMetadata({
     },
     icons: {
       icon: [
-        { url: '/madamari/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
-        { url: '/madamari/logo.svg', type: 'image/svg+xml' },
+        { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
+        { url: '/logo.svg', type: 'image/svg+xml' },
       ],
-      apple: '/madamari/apple-touch-icon.png',
+      apple: '/apple-touch-icon.png',
     },
-    manifest: '/madamari/manifest.json',
+    manifest: '/manifest.json',
     other: {
       'application-name': 'Madamari',
       'msapplication-TileColor': '#d4a574',
@@ -195,7 +195,7 @@ export default async function LocaleLayout({
                     <div>
                       <h1 className="text-xl md:text-2xl font-bold text-primary flex items-center gap-2">
                         <Image
-                          src="/madamari/logo.svg" 
+                          src="/logo.svg" 
                           alt="Madamari Logo" 
                           width={32}
                           height={32}

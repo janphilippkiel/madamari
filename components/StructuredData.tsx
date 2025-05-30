@@ -7,7 +7,7 @@ interface StructuredDataProps {
 }
 
 export function StructuredData({ locale, title, description }: StructuredDataProps) {
-  const siteUrl = 'https://janphilippkiel.com/madamari'
+  const siteUrl = 'https://madamari.com'
   
   const structuredData = {
     "@context": "https://schema.org",
