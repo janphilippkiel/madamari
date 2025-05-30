@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Block crawling of development and test paths
+Disallow: /_next/
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://janphilippkiel.com/madamari/sitemap.xml
+
+# Allow common crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /

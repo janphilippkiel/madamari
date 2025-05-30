@@ -1,0 +1,36 @@
+{
+  "name": "Madamari - Thai-German Marriage Guide",
+  "short_name": "Madamari",
+  "description": "Your comprehensive guide to marriage between Thais and Germans",
+  "start_url": "/madamari/",
+  "display": "standalone",
+  "background_color": "#f9fafb",
+  "theme_color": "#d4a574",
+  "orientation": "portrait-primary",
+  "scope": "/madamari/",
+  "lang": "de",
+  "dir": "ltr",
+  "categories": ["lifestyle", "education", "utilities"],
+  "screenshots": [
+    {
+      "src": "/madamari/screenshot-wide.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/madamari/screenshot-narrow.jpg", 
+      "sizes": "750x1334",
+      "type": "image/jpeg",
+      "form_factor": "narrow"
+    }
+  ],
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💕</text></svg>",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
