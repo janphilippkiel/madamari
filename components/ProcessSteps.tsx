@@ -306,12 +306,17 @@ export function ProcessSteps({
     }
   }
 
-    const isStepActive = (stepNumber: number) => {
+  const isStepActive = (stepNumber: number) => {
     // Step 1 is always active
     if (stepNumber === 1) return true
     
     // Other steps are only active if the previous step is completed
     return getStepStatus(stepNumber - 1)
+  }
+
+  const isCurrentActiveStep = (stepNumber: number) => {
+    // A step is "current active" if it's active but not completed
+    return isStepActive(stepNumber) && !getStepStatus(stepNumber)
   }
   
   const getStepBadge = (stepNumber: number) => {
@@ -520,7 +525,7 @@ export function ProcessSteps({
           </div>
         </CardContent>
       </Card>      {/* Step 1: Thai Documents */}
-      <Card id="step-1">
+      <Card id="step-1" className={getStepStatus(1) ? "step-card-completed" : isCurrentActiveStep(1) ? "step-card-current-active" : ""}>
         <CardHeader>
           <CardTitle className="flex items-center gap-3">
             <span className="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center text-sm">1</span>
@@ -575,7 +580,7 @@ export function ProcessSteps({
           </div>
         </CardContent>
       </Card>      {/* Step 2: Legalization */}
-      <Card id="step-2">
+      <Card id="step-2" className={getStepStatus(2) ? "step-card-completed" : isCurrentActiveStep(2) ? "step-card-current-active" : ""}>
         <CardHeader>
           <CardTitle className="flex items-center gap-3">
             <span className="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center text-sm">2</span>
@@ -609,7 +614,7 @@ export function ProcessSteps({
           </div>
         </CardContent>
       </Card>      {/* Step 3: Translation */}
-      <Card id="step-3">
+      <Card id="step-3" className={getStepStatus(3) ? "step-card-completed" : isCurrentActiveStep(3) ? "step-card-current-active" : ""}>
         <CardHeader>
           <CardTitle className="flex items-center gap-3">
             <span className="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center text-sm">3</span>
@@ -643,7 +648,7 @@ export function ProcessSteps({
           </div>
         </CardContent>
       </Card>      {/* Step 4: German Registry Office */}
-      <Card id="step-4">
+      <Card id="step-4" className={getStepStatus(4) ? "step-card-completed" : isCurrentActiveStep(4) ? "step-card-current-active" : ""}>
         <CardHeader>
           <CardTitle className="flex items-center gap-3">
             <span className="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center text-sm">4</span>
@@ -724,7 +729,7 @@ export function ProcessSteps({
             </div>
           </div>
         </CardContent>
-      </Card>      {/* Step 5: Visa Application */}      <Card id="step-5">
+      </Card>      {/* Step 5: Visa Application */}      <Card id="step-5" className={getStepStatus(5) ? "step-card-completed" : isCurrentActiveStep(5) ? "step-card-current-active" : ""}>
         <CardHeader>
           <CardTitle className="flex items-center gap-3">
             <span className="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center text-sm">5</span>

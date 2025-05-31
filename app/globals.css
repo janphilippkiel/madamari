@@ -178,6 +178,15 @@
     @apply bg-muted text-muted-foreground border-border;
   }
 
+  /* Step card border styles */
+  .step-card-completed {
+    @apply border-primary dark:border-primary;
+  }
+  
+  .step-card-current-active {
+    @apply border-[oklch(0.65_0.12_140)] dark:border-[oklch(0.55_0.15_140)];
+  }
+
   /* Document card styles */
   .document-card-completed {
     @apply bg-accent/30 border-primary/30;
