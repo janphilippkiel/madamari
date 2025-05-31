@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">  <url>
     <loc>https://madamari.com/</loc>
     <lastmod>2025-05-31</lastmod>
     <changefreq>monthly</changefreq>
@@ -8,9 +7,8 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://madamari.com/de" />
     <xhtml:link rel="alternate" hreflang="en" href="https://madamari.com/en" />
     <xhtml:link rel="alternate" hreflang="th" href="https://madamari.com/th" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://madamari.com/de" />
-  </url>
-  <url>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://madamari.com/" />
+  </url>  <url>
     <loc>https://madamari.com/de</loc>
     <lastmod>2025-05-31</lastmod>
     <changefreq>monthly</changefreq>
@@ -18,9 +16,8 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://madamari.com/de" />
     <xhtml:link rel="alternate" hreflang="en" href="https://madamari.com/en" />
     <xhtml:link rel="alternate" hreflang="th" href="https://madamari.com/th" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://madamari.com/de" />
-  </url>
-  <url>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://madamari.com/" />
+  </url>  <url>
     <loc>https://madamari.com/en</loc>
     <lastmod>2025-05-31</lastmod>
     <changefreq>monthly</changefreq>
@@ -28,9 +25,8 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://madamari.com/de" />
     <xhtml:link rel="alternate" hreflang="en" href="https://madamari.com/en" />
     <xhtml:link rel="alternate" hreflang="th" href="https://madamari.com/th" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://madamari.com/de" />
-  </url>
-  <url>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://madamari.com/" />
+  </url>  <url>
     <loc>https://madamari.com/th</loc>
     <lastmod>2025-05-31</lastmod>
     <changefreq>monthly</changefreq>
@@ -38,6 +34,6 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://madamari.com/de" />
     <xhtml:link rel="alternate" hreflang="en" href="https://madamari.com/en" />
     <xhtml:link rel="alternate" hreflang="th" href="https://madamari.com/th" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://madamari.com/de" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://madamari.com/" />
   </url>
 </urlset>

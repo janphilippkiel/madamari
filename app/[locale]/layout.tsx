@@ -46,6 +46,9 @@ export async function generateMetadata({
   const siteUrl = 'https://madamari.com'
   const currentUrl = `${siteUrl}/${locale}`
   
+  // Set canonical URL: root domain for English (default), localized URL for others
+  const canonicalUrl = locale === 'en' ? siteUrl : currentUrl
+  
   // SEO-optimized keywords based on locale
   const keywords = {
     de: [
@@ -86,10 +89,10 @@ export async function generateMetadata({
   
   return {
     title: {
-      default: t.site.title,
+      default: t.site.tab_title,
       template: `%s | ${t.site.title}`
     },
-    description: t.site.description,
+    description: t.site.meta_description,
     keywords: keywords[locale] || keywords.en,
      authors: [
       { name: 'Jan-Philipp Kiel' },
@@ -104,18 +107,18 @@ export async function generateMetadata({
     },
     metadataBase: new URL(siteUrl),
     alternates: {
-      canonical: currentUrl,
+      canonical: canonicalUrl, // Use root domain for English, localized URL for others
       languages: {
         'de': `${siteUrl}/de`,
         'en': `${siteUrl}/en`,
         'th': `${siteUrl}/th`,
-        'x-default': `${siteUrl}/de`,
+        'x-default': siteUrl, // Point to root domain (English default)
       },
     },
     openGraph: {
       title: t.site.title,
-      description: t.site.description,
-      url: currentUrl,
+      description: t.site.meta_description,
+      url: canonicalUrl, // Use consistent canonical URL
       siteName: 'Madamari',
       locale: locale === 'th' ? 'th_TH' : locale === 'de' ? 'de_DE' : 'en_US',
       type: 'website',
@@ -131,7 +134,7 @@ export async function generateMetadata({
     twitter: {
       card: 'summary_large_image',
       title: t.site.title,
-      description: t.site.description,
+      description: t.site.meta_description,
       images: ['/og-image.jpg'],
     },
     robots: {
@@ -178,7 +181,7 @@ export default async function LocaleLayout({
         <StructuredData 
           locale={locale}
           title={t.site.title}
-          description={t.site.description}
+          description={t.site.meta_description}
         />
         <BreadcrumbStructuredData 
           locale={locale}
@@ -204,9 +207,6 @@ export default async function LocaleLayout({
                         />
                         {t.site.title}
                       </h1>
-                      <p className="text-sm text-muted-foreground mt-1">
-                        {t.site.description}
-                      </p>
                     </div>
                     <div className="flex items-center gap-2">
                       <ThemeToggle />

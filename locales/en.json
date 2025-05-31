@@ -1,7 +1,8 @@
 {  "site": {
     "title": "Madamari",
-    "description": "Your Guide to Marriage between Thais and Germans"
-  },  "form": {
+    "tab_title": "Madamari – Thai-German Marriage Guide",
+    "meta_description": "Your guide to marriage between Thais and Germans. Step-by-step process, required documents, visa applications, and legal requirements for international marriages."
+  },"form": {
     "marriage_location_label": "Where do you want to get married?",
     "marriage_location_recommendation": "We recommend getting married in the country where you intend to live.",    "marriage_location_germany": "Germany",
     "marriage_location_thailand": "Thailand",
@@ -13,7 +14,7 @@
     "german_partner_birth_label": "Birthplace of the German partner",    "german_partner_birth_germany": "Germany",
     "german_partner_birth_abroad": "Abroad","thai_partner_financing_label": "Can the Thai partner finance their 90-day stay themselves?",    "thai_partner_financing_self": "Yes, self-financing",
     "thai_partner_financing_sponsor": "No, needs sponsorship"},"process": {
-    "personalized_title": "Your Personalized Marriage Process",
+    "personalized_title": "Your Guide to Marriage between Thais and Germans",
     "step_1_title": "Obtaining Thai Documents",
     "step_1_description": "Collection of all required documents from Thai authorities. All documents must be originals and not older than 6 months.",
     "step_2_title": "Legalization at German Embassy",

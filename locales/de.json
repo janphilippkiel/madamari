@@ -1,6 +1,7 @@
 {  "site": {
     "title": "Madamari",
-    "description": "Euer Leitfaden für die Eheschließung zwischen Thailändern und Deutschen"
+    "tab_title": "Madamari – Leitfaden für Thai-Deutsche Hochzeit",
+    "meta_description": "Euer Leitfaden für die Eheschließung zwischen Thailändern und Deutschen. Schritt-für-Schritt-Prozess, erforderliche Dokumente, Visumsanträge und rechtliche Anforderungen für internationale Eheschließungen."
   },
   "form": {
     "configuration_title": "Konfiguration eures Heiratsprozesses",
@@ -17,7 +18,7 @@
     "thai_partner_financing_self": "Ja, Eigenfinanzierung",
     "thai_partner_financing_sponsor": "Nein, benötigt Verpflichtungserklärung"
   },"process": {
-    "personalized_title": "Euer personalisierter Heiratsprozess",
+    "personalized_title": "Euer Leitfaden für die Eheschließung zwischen Thailändern und Deutschen",
     "step_1_title": "Beschaffung thailändischer Dokumente",
     "step_1_description": "Sammlung aller erforderlichen Dokumente von den thailändischen Behörden. Alle Dokumente müssen im Original vorliegen und dürfen nicht älter als 6 Monate sein.",
     "step_2_title": "Legalisierung bei der Deutschen Botschaft",
